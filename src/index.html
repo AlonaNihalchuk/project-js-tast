@@ -14,33 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <div class="container">
-          <svg class="logo-icon" width="40" height="40">
-            <use href=""></use>
-          </svg>
-          <a href="./index.html" class="logo"><span>Filmoteka</span></a>
-
+    <header class="page-header">
+      <div class="container header-container">
+        <div class="logo-container">
+          <div class="logo-box">
+            <svg class="logo-icon" width="24" height="24">
+              <use href="/images/symbol-defs.svg#icon-film"></use>
+            </svg>
+            <a href="./index.html" class="logo"><span class="logo-text">Filmoteka</span></a>
+          </div>
           <nav>
-            <button type="button" class="home-button">Home</button
-            ><button type="button" class="my-library-button">my library</button>
+            <a href="./index.html" class="home-link link current">Home</a>
+            <a href="./index.html" class="link">my library</a>
           </nav>
         </div>
-        <form class="search-form">
-          <input
-            id="elem1"
-            type="text"
-            placeholder="Поиск фильмов"
-            class="js-input search-input"
-            name="query"
-          />
-        </form>
-        <svg class="logo-icon" width="40" height="40">
-          <use href=""></use>
-        </svg>
+        <div class="form-container">
+          <form class="search-form">
+            <input
+              id="elem1"
+              type="text"
+              placeholder="Поиск фильмов"
+              class="js-input search-input"
+              name="query"
+            />
+          </form>
+          <svg class="search-icon" width="12" height="12">
+            <use href="/images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </div>
       </div>
     </header>
     <footer class="footer"></footer>
