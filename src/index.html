@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework 10</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <div class="header-container">
+        <div class="container">
+          <svg class="logo-icon" width="40" height="40">
+            <use href=""></use>
+          </svg>
+          <a href="./index.html" class="logo"><span>Filmoteka</span></a>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+          <nav>
+            <button type="button" class="home-button">Home</button
+            ><button type="button" class="my-library-button">my library</button>
+          </nav>
+        </div>
+        <form class="search-form">
+          <input
+            id="elem1"
+            type="text"
+            placeholder="Поиск фильмов"
+            class="js-input search-input"
+            name="query"
+          />
+        </form>
+        <svg class="logo-icon" width="40" height="40">
+          <use href=""></use>
+        </svg>
+      </div>
+    </header>
+    <footer class="footer"></footer>
     <script src="./index.js"></script>
   </body>
 </html>
